@@ -1,0 +1,9 @@
+# OS
+.DS_Store
+
+/public/*.css
+/public/styles.css.map
+
+# Environment
+.env
+node_modules
