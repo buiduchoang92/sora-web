@@ -63,23 +63,23 @@ export default function ShopFilterSidebar({ isOpenFilter, onOpenFilter, onCloseF
   const result: string[] = []
   return (
     <>
-      <Button disableRipple color="inherit" endIcon={<Iconify icon="ic:round-filter-list" />} onClick={onOpenFilter}>
+      <Button disableRipple color='inherit' endIcon={<Iconify icon='ic:round-filter-list' />} onClick={onOpenFilter}>
         Filters&nbsp;
       </Button>
       <Drawer
-        anchor="right"
+        anchor='right'
         open={isOpenFilter}
         onClose={onCloseFilter}
         PaperProps={{
           sx: { width: 280, border: 'none', overflow: 'hidden' },
         }}
       >
-        <Stack direction="row" alignItems="center" justifyContent="space-between" sx={{ px: 1, py: 2 }}>
-          <Typography variant="subtitle1" sx={{ ml: 1 }}>
+        <Stack direction='row' alignItems='center' justifyContent='space-between' sx={{ px: 1, py: 2 }}>
+          <Typography variant='subtitle1' sx={{ ml: 1 }}>
             Filters
           </Typography>
           <IconButton onClick={onCloseFilter}>
-            <Iconify icon="eva:close-fill" width={20} height={20} />
+            <Iconify icon='eva:close-fill' width={20} height={20} />
           </IconButton>
         </Stack>
 
@@ -87,7 +87,7 @@ export default function ShopFilterSidebar({ isOpenFilter, onOpenFilter, onCloseF
         <Scrollbar sx={{}}>
           <Stack spacing={3} sx={{ p: 3 }}>
             <div>
-              <Typography variant="subtitle1" gutterBottom>
+              <Typography variant='subtitle1' gutterBottom>
                 Gender
               </Typography>
               <FormGroup>
@@ -98,7 +98,7 @@ export default function ShopFilterSidebar({ isOpenFilter, onOpenFilter, onCloseF
             </div>
 
             <div>
-              <Typography variant="subtitle1" gutterBottom>
+              <Typography variant='subtitle1' gutterBottom>
                 Category
               </Typography>
               <RadioGroup>
@@ -109,11 +109,11 @@ export default function ShopFilterSidebar({ isOpenFilter, onOpenFilter, onCloseF
             </div>
 
             <div>
-              <Typography variant="subtitle1" gutterBottom>
+              <Typography variant='subtitle1' gutterBottom>
                 Colors
               </Typography>
               <ColorManyPicker
-                name="colors"
+                name='colors'
                 colors={FILTER_COLOR_OPTIONS}
                 onChecked={(color: string) => result.includes(color)}
                 sx={{ maxWidth: 38 * 4 }}
@@ -121,7 +121,7 @@ export default function ShopFilterSidebar({ isOpenFilter, onOpenFilter, onCloseF
             </div>
 
             <div>
-              <Typography variant="subtitle1" gutterBottom>
+              <Typography variant='subtitle1' gutterBottom>
                 Price
               </Typography>
               <RadioGroup>
@@ -132,7 +132,7 @@ export default function ShopFilterSidebar({ isOpenFilter, onOpenFilter, onCloseF
             </div>
 
             <div>
-              <Typography variant="subtitle1" gutterBottom>
+              <Typography variant='subtitle1' gutterBottom>
                 Rating
               </Typography>
               <RadioGroup>
@@ -143,12 +143,12 @@ export default function ShopFilterSidebar({ isOpenFilter, onOpenFilter, onCloseF
                     control={
                       <Radio
                         disableRipple
-                        color="default"
+                        color='default'
                         icon={<Rating readOnly value={4 - index} />}
                         checkedIcon={<Rating readOnly value={4 - index} />}
                       />
                     }
-                    label="& Up"
+                    label='& Up'
                     sx={{
                       my: 0.5,
                       borderRadius: 1,
@@ -168,11 +168,11 @@ export default function ShopFilterSidebar({ isOpenFilter, onOpenFilter, onCloseF
         <Box sx={{ p: 3 }}>
           <Button
             fullWidth
-            size="large"
-            type="submit"
-            color="inherit"
-            variant="outlined"
-            startIcon={<Iconify icon="ic:round-clear-all" />}
+            size='large'
+            type='submit'
+            color='inherit'
+            variant='outlined'
+            startIcon={<Iconify icon='ic:round-clear-all' />}
           >
             Clear All
           </Button>

@@ -4,9 +4,8 @@ import { PaletteMode } from '@mui/material'
 import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import CssBaseline from '@mui/material/CssBaseline'
-import './App.css'
 
-import Routers from './Routes'
+import Routers2 from './Routesv2'
 
 import { ColorModeContext } from './core/theme/color-context'
 import customTheme, { getDesignTokens, getThemedComponents } from './core/theme/customTheme'
@@ -40,9 +39,9 @@ const App = () => {
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline enableColorScheme />
-        <div className="App">
+        <div className='App'>
           <TodoMsgNavbar />
-          <Routers />
+          <Routers2 />
         </div>
       </ThemeProvider>
     </ColorModeContext.Provider>

@@ -4,7 +4,7 @@ import queryString from 'query-string'
 const axiosClient = axios.create({
   baseURL: process.env.REACT_APP_API_URL,
   headers: {
-    "Access-Control-Allow-Origin": "*",
+    'Access-Control-Allow-Origin': '*',
     'content-type': 'application/x-www-form-urlencoded',
   },
   paramsSerializer: (params) => queryString.stringify(params),

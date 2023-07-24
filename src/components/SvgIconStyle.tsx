@@ -11,7 +11,7 @@ interface SvgIconStyleProps {
 export default function SvgIconStyle({ src, sx }: SvgIconStyleProps) {
   return (
     <Box
-      component="span"
+      component='span'
       sx={{
         width: 24,
         height: 24,

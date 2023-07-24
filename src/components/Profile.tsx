@@ -40,7 +40,7 @@ export default function Profile() {
           padding: 2,
         }}
       >
-        <Grid container spacing={2} direction="row" justifyContent="space-between" alignItems="center">
+        <Grid container spacing={2} direction='row' justifyContent='space-between' alignItems='center'>
           <Grid item>
             <Item>
               <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
@@ -50,14 +50,14 @@ export default function Profile() {
           </Grid>
           <Grid item>
             <Item>
-              <Typography component="h1" variant="h5">
+              <Typography component='h1' variant='h5'>
                 Name User
               </Typography>
             </Item>
           </Grid>
           <Grid item>
             <Item>
-              <Typography component="h1" variant="h5">
+              <Typography component='h1' variant='h5'>
                 Setting
               </Typography>
             </Item>

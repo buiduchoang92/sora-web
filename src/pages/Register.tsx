@@ -58,15 +58,15 @@ export default function Register() {
   const mdUp = useResponsive('up', 'md', '', '')
 
   return (
-    <Page title="Register" meta="">
+    <Page title='Register' meta=''>
       <RootStyle>
         <HeaderStyle>
           <Logo disabledLink={false} sx={'auto'} />
 
           {smUp && (
-            <Typography variant="body2" sx={{ mt: { md: -2 } }}>
+            <Typography variant='body2' sx={{ mt: { md: -2 } }}>
               Already have an account? {''}
-              <Link variant="subtitle2" component={RouterLink} to="/login">
+              <Link variant='subtitle2' component={RouterLink} to='/login'>
                 Login
               </Link>
             </Typography>
@@ -74,15 +74,15 @@ export default function Register() {
         </HeaderStyle>
         {mdUp && (
           <SectionStyle>
-            <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 5 }}>
+            <Typography variant='h3' sx={{ px: 5, mt: 10, mb: 5 }}>
               Manage the job more effectively with Minimal
             </Typography>
-            <img alt="register" src="/static/illustrations/illustration_register.png" />
+            <img alt='register' src='/static/illustrations/illustration_register.png' />
           </SectionStyle>
         )}
         <Container>
           <ContentStyle>
-            <Typography variant="h4" gutterBottom>
+            <Typography variant='h4' gutterBottom>
               Get started absolutely free.
             </Typography>
             <Typography sx={{ color: 'text.secondary', mb: 5 }}>Free forever. No credit card needed.</Typography>
@@ -91,21 +91,21 @@ export default function Register() {
 
             <RegisterForm />
 
-            <Typography variant="body2" align="center" sx={{ color: 'text.secondary', mt: 3 }}>
+            <Typography variant='body2' align='center' sx={{ color: 'text.secondary', mt: 3 }}>
               By registering, I agree to Minimal&nbsp;
-              <Link underline="always" color="text.primary" href="#">
+              <Link underline='always' color='text.primary' href='#'>
                 Terms of Service
               </Link>
               {''}and{''}
-              <Link underline="always" color="text.primary" href="#">
+              <Link underline='always' color='text.primary' href='#'>
                 Privacy Policy
               </Link>
               .
             </Typography>
             {!smUp && (
-              <Typography variant="body2" sx={{ mt: 3, textAlign: 'center' }}>
+              <Typography variant='body2' sx={{ mt: 3, textAlign: 'center' }}>
                 Already have an account?{' '}
-                <Link variant="subtitle2" to="/login" component={RouterLink}>
+                <Link variant='subtitle2' to='/login' component={RouterLink}>
                   Login
                 </Link>
               </Typography>

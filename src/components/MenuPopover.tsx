@@ -52,7 +52,7 @@ export default function MenuPopover({ children, sx, open, anchorEl, id, ...other
       }}
       {...other}
     >
-      <ArrowStyle className="arrow" />
+      <ArrowStyle className='arrow' />
 
       {children}
     </Popover>

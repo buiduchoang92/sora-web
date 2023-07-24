@@ -18,13 +18,13 @@ export default function RoutesV3() {
       path: '/',
       // element: <LogoOnlyLayout />,
       children: [
-        { path: '/', element: <Navigate to="/home-page/" /> },
+        { path: '/', element: <Navigate to='/home-page/' /> },
         { path: 'login', element: <Login /> },
         { path: 'register', element: <Register /> },
         { path: '404', element: <NotFound /> },
-        { path: '*', element: <Navigate to="/404" /> },
+        { path: '*', element: <Navigate to='/404' /> },
       ],
     },
-    { path: '*', element: <Navigate to="/404" replace /> },
+    { path: '*', element: <Navigate to='/404' replace /> },
   ])
 }

@@ -11,12 +11,12 @@ export default function Routers() {
   return (
     <Routes>
       <Route index element={<HomePage />} />
-      <Route path="login" element={<SignIn />} />
-      <Route path="register-user" element={<RegisterCustomer />} />
-      <Route path="profile" element={<Profile />} />
-      <Route path="user/list" element={<ListUser />} />
-      <Route path="user/create" element={<CreateUser />} />
-      <Route path="user/:id/edit" element={<EditUser />} />
+      <Route path='login' element={<SignIn />} />
+      <Route path='register-user' element={<RegisterCustomer />} />
+      <Route path='profile' element={<Profile />} />
+      <Route path='user/list' element={<ListUser />} />
+      <Route path='user/create' element={<CreateUser />} />
+      <Route path='user/:id/edit' element={<EditUser />} />
     </Routes>
   )
 }

@@ -22,15 +22,15 @@ import {
 
 export default function DashboardApp() {
   return (
-    <Page title="Dashboard" meta="">
-      <Container maxWidth="xl">
-        <Typography variant="h4" sx={{ mb: 5 }}>
+    <Page title='Dashboard' meta=''>
+      <Container maxWidth='xl'>
+        <Typography variant='h4' sx={{ mb: 5 }}>
           Hi, Welcome back
         </Typography>
         <Grid container spacing={3}>
           <Grid item xs={12} md={6} lg={8}>
             <AppTasks
-              title="Tasks"
+              title='Tasks'
               list={[
                 { id: '1', label: 'Create FireStone Logo' },
                 { id: '2', label: 'Add SCSS and JS files if required' },

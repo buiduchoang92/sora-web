@@ -1,12 +1,12 @@
-import {ReactNode} from 'react'
+import { ReactNode } from 'react'
 import './stylesheets/styles.scss'
 
 interface Props {
-    children?: ReactNode
+  children?: ReactNode
 }
 
-const GlobalStyle = ({children}: Props) => {
-    return <>{children}</>
+const GlobalStyle = ({ children }: Props) => {
+  return <>{children}</>
 }
 
-export default GlobalStyle;
+export default GlobalStyle

@@ -30,7 +30,7 @@ export default function AppTasks({ title, subheader, list, ...other }: AppTasksP
     <Card {...other}>
       <CardHeader title={title} subheader={subheader} />
       <Controller
-        name="taskCompleted"
+        name='taskCompleted'
         control={control}
         render={({ field }) => {
           const onSelected = (task: string) =>
@@ -95,7 +95,7 @@ function TaskItem({ task, checked, onChange }: TaskItemProps) {
 
   return (
     <Stack
-      direction="row"
+      direction='row'
       sx={{
         px: 2,
         py: 0.75,
@@ -157,7 +157,7 @@ interface MoreMenuButtonProps {
 function MoreMenuButton({ actions, open, onOpen, onClose }: MoreMenuButtonProps) {
   return (
     <>
-      <IconButton size="large" color="inherit" sx={{ opacity: 0.48 }} onClick={onOpen}>
+      <IconButton size='large' color='inherit' sx={{ opacity: 0.48 }} onClick={onOpen}>
         <Iconify icon={'eva:more-vertical-fill'} width={20} height={20} />
       </IconButton>
 
@@ -167,7 +167,7 @@ function MoreMenuButton({ actions, open, onOpen, onClose }: MoreMenuButtonProps)
         onClose={onClose}
         anchorOrigin={{ vertical: 'top', horizontal: 'left' }}
         transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-        arrow="right-top"
+        arrow='right-top'
         sx={{
           mt: -0.5,
           width: 'auto',

@@ -15,7 +15,7 @@ interface DefaultInitial {
 
 const defaultState: DefaultInitial = {
   loading: false,
-  loginInfo: { status: '', token_access_jwt: '',token_refresh_jwt:'', email: '' },
+  loginInfo: { status: '', token_access_jwt: '', token_refresh_jwt: '', email: '' },
 }
 
 const loginReducer = (state: DefaultInitial = defaultState, action: LoginDispatchType): DefaultInitial => {

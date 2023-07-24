@@ -27,7 +27,7 @@ export default function ShopProductCard({ product }: { product: ProductProps }) 
       <Box sx={{ pt: '100%', position: 'relative' }}>
         {status && (
           <Label
-            variant="filled"
+            variant='filled'
             color={(status === 'sale' && 'error') || 'info'}
             sx={{
               zIndex: 9,
@@ -44,18 +44,18 @@ export default function ShopProductCard({ product }: { product: ProductProps }) 
       </Box>
 
       <Stack spacing={2} sx={{ p: 3 }}>
-        <Link to="#" color="inherit" underline="hover" component={RouterLink}>
-          <Typography variant="subtitle2" noWrap>
+        <Link to='#' color='inherit' underline='hover' component={RouterLink}>
+          <Typography variant='subtitle2' noWrap>
             {name}
           </Typography>
         </Link>
 
-        <Stack direction="row" alignItems="center" justifyContent="space-between">
+        <Stack direction='row' alignItems='center' justifyContent='space-between'>
           <ColorPreview colors={colors} />
-          <Typography variant="subtitle1">
+          <Typography variant='subtitle1'>
             <Typography
-              component="span"
-              variant="body1"
+              component='span'
+              variant='body1'
               sx={{
                 color: 'text.disabled',
                 textDecoration: 'line-through',

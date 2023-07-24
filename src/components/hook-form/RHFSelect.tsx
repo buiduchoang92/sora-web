@@ -22,7 +22,7 @@ export default function RHFSelect({ name, options, defaultValue, label, ...other
   const { control } = useFormContext()
   const labelID = `${name}-label`
   return (
-    <FormControl variant="standard" fullWidth>
+    <FormControl variant='standard' fullWidth>
       <InputLabel id={labelID}>{label}</InputLabel>
       <Controller
         name={name}

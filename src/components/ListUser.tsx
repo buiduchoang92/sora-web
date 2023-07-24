@@ -12,7 +12,7 @@ export default function ListUser() {
   const [guests, setGuests] = useState<Array<GuestType>>([])
   const guestFromStore: Array<GuestType> = useSelector((state: RootStore) => state.guest.guest)
   useEffect(() => {
-    setGuests(guestFromStore);
+    setGuests(guestFromStore)
     // getUsers()
   }, [guests])
   const getUsers = async () => {
@@ -64,6 +64,5 @@ export default function ListUser() {
         </tbody>
       </table>
     </div>
-    
   )
 }

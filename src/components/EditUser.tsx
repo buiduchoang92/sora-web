@@ -11,7 +11,7 @@ export default function EditUser() {
     user_name: '',
     your_name: '',
     address: '',
-    telephone: ''
+    telephone: '',
   })
 
   useEffect(() => {
@@ -41,14 +41,14 @@ export default function EditUser() {
     <div>
       <h1>Edit user</h1>
       <form onSubmit={handleSubmit}>
-        <table cellSpacing="10">
+        <table cellSpacing='10'>
           <tbody>
             <tr>
               <th>
                 <label>UserName: </label>
               </th>
               <td>
-                <input value={inputs.user_name} type="text" name="name" onChange={handleChange} />
+                <input value={inputs.user_name} type='text' name='name' onChange={handleChange} />
               </td>
             </tr>
             <tr>
@@ -56,7 +56,7 @@ export default function EditUser() {
                 <label>YourName: </label>
               </th>
               <td>
-                <input value={inputs.your_name} type="text" name="email" onChange={handleChange} />
+                <input value={inputs.your_name} type='text' name='email' onChange={handleChange} />
               </td>
             </tr>
             <tr>
@@ -64,7 +64,7 @@ export default function EditUser() {
                 <label>Address: </label>
               </th>
               <td>
-                <input value={inputs.address} type="text" name="mobile" onChange={handleChange} />
+                <input value={inputs.address} type='text' name='mobile' onChange={handleChange} />
               </td>
             </tr>
             <tr>
@@ -72,11 +72,11 @@ export default function EditUser() {
                 <label>Telephone: </label>
               </th>
               <td>
-                <input value={inputs.telephone} type="text" name="mobile" onChange={handleChange} />
+                <input value={inputs.telephone} type='text' name='mobile' onChange={handleChange} />
               </td>
             </tr>
             <tr>
-              <td align="right">
+              <td align='right'>
                 <button>Save</button>
               </td>
             </tr>

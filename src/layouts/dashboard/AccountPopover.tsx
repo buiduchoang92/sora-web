@@ -70,7 +70,7 @@ export default function AccountPopover() {
           }),
         }}
       >
-        <Avatar src={account.photoURL} alt="photoURL" />
+        <Avatar src={account.photoURL} alt='photoURL' />
       </IconButton>
 
       <MenuPopover
@@ -88,10 +88,10 @@ export default function AccountPopover() {
         }}
       >
         <Box sx={{ my: 1.5, px: 2.5 }}>
-          <Typography variant="subtitle2" noWrap>
+          <Typography variant='subtitle2' noWrap>
             {account.displayName}
           </Typography>
-          <Typography variant="body2" sx={{ color: 'text.secondary' }} noWrap>
+          <Typography variant='body2' sx={{ color: 'text.secondary' }} noWrap>
             {account.email}
           </Typography>
         </Box>

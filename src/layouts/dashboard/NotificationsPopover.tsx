@@ -109,8 +109,8 @@ export default function NotificationsPopover() {
         onClick={handleOpen}
         sx={{ width: 40, height: 40 }}
       >
-        <Badge badgeContent={totalUnRead} color="error">
-          <Iconify icon="eva:bell-fill" width={20} height={20} />
+        <Badge badgeContent={totalUnRead} color='error'>
+          <Iconify icon='eva:bell-fill' width={20} height={20} />
         </Badge>
       </IconButton>
 
@@ -122,16 +122,16 @@ export default function NotificationsPopover() {
       >
         <Box sx={{ display: 'flex', alignItems: 'center', py: 2, px: 2.5 }}>
           <Box sx={{ flexGrow: 1 }}>
-            <Typography variant="subtitle1">Notifications</Typography>
-            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+            <Typography variant='subtitle1'>Notifications</Typography>
+            <Typography variant='body2' sx={{ color: 'text.secondary' }}>
               You have {totalUnRead} unread messages
             </Typography>
           </Box>
 
           {totalUnRead > 0 && (
-            <Tooltip title=" Mark all as read">
-              <IconButton color="primary" onClick={handleMarkAllAsRead}>
-                <Iconify icon="eva:done-all-fill" width={20} height={20} />
+            <Tooltip title=' Mark all as read'>
+              <IconButton color='primary' onClick={handleMarkAllAsRead}>
+                <Iconify icon='eva:done-all-fill' width={20} height={20} />
               </IconButton>
             </Tooltip>
           )}
@@ -212,7 +212,7 @@ function NotificationItem({ notification }: { notification: NotificationItemProp
         primary={title}
         secondary={
           <Typography
-            variant="caption"
+            variant='caption'
             sx={{
               mt: 0.5,
               display: 'flex',
@@ -220,7 +220,7 @@ function NotificationItem({ notification }: { notification: NotificationItemProp
               color: 'text.disabled',
             }}
           >
-            <Iconify icon="eva:clock-outline" sx={{ mr: 0.5, width: 16, height: 16 }} />
+            <Iconify icon='eva:clock-outline' sx={{ mr: 0.5, width: 16, height: 16 }} />
             {fToNow(notification.createdAt)}
           </Typography>
         }
@@ -233,9 +233,9 @@ function NotificationItem({ notification }: { notification: NotificationItemProp
 
 function renderContent(notification: NotificationItemProps) {
   const title = (
-    <Typography variant="subtitle2">
+    <Typography variant='subtitle2'>
       {notification.title}
-      <Typography component="span" variant="body2" sx={{ color: 'text.secondary' }}>
+      <Typography component='span' variant='body2' sx={{ color: 'text.secondary' }}>
         &nbsp; {noCase(notification.description)}
       </Typography>
     </Typography>
@@ -243,25 +243,25 @@ function renderContent(notification: NotificationItemProps) {
 
   if (notification.type === 'order_placed') {
     return {
-      avatar: <img alt={notification.title} src="/static/icons/ic_notification_package.svg" />,
+      avatar: <img alt={notification.title} src='/static/icons/ic_notification_package.svg' />,
       title,
     }
   }
   if (notification.type === 'order_shipped') {
     return {
-      avatar: <img alt={notification.title} src="/static/icons/ic_notification_shipping.svg" />,
+      avatar: <img alt={notification.title} src='/static/icons/ic_notification_shipping.svg' />,
       title,
     }
   }
   if (notification.type === 'mail') {
     return {
-      avatar: <img alt={notification.title} src="/static/icons/ic_notification_mail.svg" />,
+      avatar: <img alt={notification.title} src='/static/icons/ic_notification_mail.svg' />,
       title,
     }
   }
   if (notification.type === 'chat_message') {
     return {
-      avatar: <img alt={notification.title} src="/static/icons/ic_notification_chat.svg" />,
+      avatar: <img alt={notification.title} src='/static/icons/ic_notification_chat.svg' />,
       title,
     }
   }

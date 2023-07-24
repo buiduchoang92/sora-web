@@ -21,18 +21,18 @@ const SORT_OPTIONS = [
 export default function Blog() {
   const handleOnsort = () => {}
   return (
-    <Page title="Dashboard: Blog" meta="">
+    <Page title='Dashboard: Blog' meta=''>
       <Container>
-        <Stack direction="row" alignItems="center" justifyContent="space-between" mb={5}>
-          <Typography variant="h4" gutterBottom>
+        <Stack direction='row' alignItems='center' justifyContent='space-between' mb={5}>
+          <Typography variant='h4' gutterBottom>
             Blog
           </Typography>
-          <Button variant="contained" component={RouterLink} to="#" startIcon={<Iconify icon="eva:plus-fill" />}>
+          <Button variant='contained' component={RouterLink} to='#' startIcon={<Iconify icon='eva:plus-fill' />}>
             New Post
           </Button>
         </Stack>
 
-        <Stack mb={5} direction="row" alignItems="center" justifyContent="space-between">
+        <Stack mb={5} direction='row' alignItems='center' justifyContent='space-between'>
           <BlogPostsSearch posts={POSTS} />
           <BlogPostsSort options={SORT_OPTIONS} onSort={handleOnsort} />
         </Stack>

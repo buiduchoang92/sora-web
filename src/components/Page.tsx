@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async'
 import { forwardRef } from 'react'
 // @mui
 import { Box } from '@mui/material'

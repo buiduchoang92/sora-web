@@ -1,0 +1,8 @@
+export { default as Login } from './Login'
+export { default as Register } from './Register'
+export { default as DashboardApp } from './DashboardApp'
+export { default as NotFound } from './Page404'
+export { default as Products } from './Products'
+export { default as Profile } from './Profile'
+export { default as Blog } from './Blog'
+export { default as Cart } from './Cart'

@@ -68,16 +68,16 @@ export default function LoginForm() {
   return (
     <FormProvider methods={methods} onSubmit={handleSubmit(onSubmit)}>
       <Stack spacing={3}>
-        <RHFTextField name="email" label="Email address" />
+        <RHFTextField name='email' label='Email address' />
 
         <RHFTextField
-          name="password"
-          label="Password"
+          name='password'
+          label='Password'
           type={showPassword ? 'text' : 'password'}
           InputProps={{
             endAdornment: (
-              <InputAdornment position="end">
-                <IconButton onClick={() => setShowPassword(!showPassword)} edge="end">
+              <InputAdornment position='end'>
+                <IconButton onClick={() => setShowPassword(!showPassword)} edge='end'>
                   <Iconify icon={showPassword ? 'eva:eye-fill' : 'eva:eye-off-fill'} />
                 </IconButton>
               </InputAdornment>
@@ -86,14 +86,14 @@ export default function LoginForm() {
         />
       </Stack>
 
-      <Stack direction="row" alignItems="center" justifyContent="space-between" sx={{ my: 2 }}>
-        <RHFCheckbox name="remember" label="Remember me" />
-        <Link variant="subtitle2" underline="hover">
+      <Stack direction='row' alignItems='center' justifyContent='space-between' sx={{ my: 2 }}>
+        <RHFCheckbox name='remember' label='Remember me' />
+        <Link variant='subtitle2' underline='hover'>
           Forgot password?
         </Link>
       </Stack>
 
-      <LoadingButton fullWidth size="large" type="submit" variant="contained" loading={isSubmitting}>
+      <LoadingButton fullWidth size='large' type='submit' variant='contained' loading={isSubmitting}>
         Login
       </LoadingButton>
     </FormProvider>

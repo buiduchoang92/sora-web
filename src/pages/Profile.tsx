@@ -35,10 +35,10 @@ export default function PageProfile() {
     fetch()
   }, [])
   return (
-    <Page title="Profile" meta="">
+    <Page title='Profile' meta=''>
       <Container>
         <ContentStyle sx={{ textAlign: 'center', alignItems: 'center' }}>
-          <Typography variant="h3" paragraph>
+          <Typography variant='h3' paragraph>
             Hello, well come page Profile!{profile}
           </Typography>
 
@@ -48,12 +48,12 @@ export default function PageProfile() {
           </Typography>
 
           <Box
-            component="img"
-            src="/static/illustrations/illustration_404.svg"
+            component='img'
+            src='/static/illustrations/illustration_404.svg'
             sx={{ height: 260, mx: 'auto', my: { xs: 5, sm: 10 } }}
           />
 
-          <Button to="/" size="large" variant="contained" component={RouterLink}>
+          <Button to='/' size='large' variant='contained' component={RouterLink}>
             Go to Home
           </Button>
         </ContentStyle>

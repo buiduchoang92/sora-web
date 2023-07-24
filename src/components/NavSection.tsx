@@ -109,8 +109,8 @@ function NavItem({ item, active }: NavItemProps) {
           iconify={open}
         />
 
-        <Collapse in={open} timeout="auto" unmountOnExit>
-          <List component="div" disablePadding>
+        <Collapse in={open} timeout='auto' unmountOnExit>
+          <List component='div' disablePadding>
             {/* {children.map((item) => {
               const { title, path } = item
               const isActiveSub = active(path)

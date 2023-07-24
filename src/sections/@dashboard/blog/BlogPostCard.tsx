@@ -105,8 +105,8 @@ export default function BlogPostCard({ post, index }: BlogPostCardProps) {
           }}
         >
           <SvgIconStyle
-            color="paper"
-            src="/static/icons/shape-avatar.svg"
+            color='paper'
+            src='/static/icons/shape-avatar.svg'
             sx={{
               width: 80,
               height: 36,
@@ -145,15 +145,15 @@ export default function BlogPostCard({ post, index }: BlogPostCardProps) {
             }),
           }}
         >
-          <Typography gutterBottom variant="caption" sx={{ color: 'text.disabled', display: 'block' }}>
+          <Typography gutterBottom variant='caption' sx={{ color: 'text.disabled', display: 'block' }}>
             {fDate(createdAt)}
           </Typography>
 
           <TitleStyle
             // to="#"
-            color="inherit"
-            variant="subtitle2"
-            underline="hover"
+            color='inherit'
+            variant='subtitle2'
+            underline='hover'
             // component={RouterLink}
             sx={{
               ...(latestPostLarge && { typography: 'h5', height: 60 }),
@@ -179,7 +179,7 @@ export default function BlogPostCard({ post, index }: BlogPostCardProps) {
                 }}
               >
                 <Iconify icon={info.icon} sx={{ width: 16, height: 16, mr: 0.5 }} />
-                <Typography variant="caption">{fShortenNumber(info.number)}</Typography>
+                <Typography variant='caption'>{fShortenNumber(info.number)}</Typography>
               </Box>
             ))}
           </InfoStyle>

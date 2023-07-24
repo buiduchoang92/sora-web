@@ -2,7 +2,7 @@ import { customerServices } from '../../services/instanceApiService'
 import createStorage from '../createStoreProvider'
 
 const createTokenProvider = () => {
-  const tokenSetting = createStorage('REACT_TOKEN_AUTH','localStorage')
+  const tokenSetting = createStorage('REACT_TOKEN_AUTH', 'localStorage')
 
   // let _token: { token_access_jwt: string; token_refresh_jwt: string } | null
   let _token: any

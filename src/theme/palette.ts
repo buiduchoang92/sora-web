@@ -106,7 +106,7 @@ const palette = {
   success: { ...SUCCESS },
   warning: { ...WARNING },
   error: { ...ERROR },
-  grey: {...GREY},
+  grey: { ...GREY },
   gradients: GRADIENTS,
   chart: CHART_COLORS,
   divider: GREY[500_24],

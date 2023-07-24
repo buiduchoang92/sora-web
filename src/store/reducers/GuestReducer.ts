@@ -13,7 +13,7 @@ interface DefaultInitial {
 
 const defaultState: DefaultInitial = {
   loading: false,
-  guest: []
+  guest: [],
 }
 
 const guestReducer = (state: DefaultInitial = defaultState, action: GuestDispatchType): DefaultInitial => {

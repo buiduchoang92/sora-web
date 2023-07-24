@@ -30,7 +30,7 @@ function IconColor({ sx, ...other }: IconColorProps) {
       }}
       {...other}
     >
-      <Iconify icon="eva:checkmark-fill" />
+      <Iconify icon='eva:checkmark-fill' />
     </Box>
   )
 }
@@ -50,9 +50,9 @@ export default function ColorManyPicker({ colors, onChecked, sx, ...other }: Col
         return (
           <Checkbox
             key={color}
-            size="small"
+            size='small'
             value={color}
-            color="default"
+            color='default'
             checked={onChecked(color)}
             icon={
               <IconColor

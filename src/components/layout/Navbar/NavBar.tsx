@@ -73,7 +73,7 @@ export default function TodoMsgNavbar() {
   const HeaderBar = () => {
     return (
       <AppBar
-        position="fixed"
+        position='fixed'
         className={cx(
           {
             [classes.appBarShift]: open,
@@ -81,11 +81,11 @@ export default function TodoMsgNavbar() {
           sticky ? classes.is_sticky : '',
         )}
       >
-        <Grid container direction="row" justifyContent="space-between" alignItems="center">
+        <Grid container direction='row' justifyContent='space-between' alignItems='center'>
           <Grid item xs={1} sm={1}>
             <Toolbar>
               <BottomNavigation
-                aria-label="open drawer"
+                aria-label='open drawer'
                 onClick={handleDrawerOpen}
                 sx={{
                   '& .MuiBottomNavigationAction-root, .Mui-selected, svg': {
@@ -116,7 +116,7 @@ export default function TodoMsgNavbar() {
   const SiderBar = () => {
     return (
       <Drawer
-        variant="permanent"
+        variant='permanent'
         className={clsx(
           classes.drawer,
           {
@@ -139,48 +139,48 @@ export default function TodoMsgNavbar() {
         </div>
         <Divider />
         <List>
-          <ListItem button key="Board" component={Link} to="/">
+          <ListItem button key='Board' component={Link} to='/'>
             <ListItemIcon>
               <DashboardIcon />
             </ListItemIcon>
-            <ListItemText primary="Board" />
+            <ListItemText primary='Board' />
           </ListItem>
-          <ListItem button key="Settings" component={Link} to="/settings">
+          <ListItem button key='Settings' component={Link} to='/settings'>
             <ListItemIcon>
               <SettingsIcon />
             </ListItemIcon>
-            <ListItemText primary="Settings" />
+            <ListItemText primary='Settings' />
           </ListItem>
-          <ListItem button key="About" component={Link} to="/about">
+          <ListItem button key='About' component={Link} to='/about'>
             <ListItemIcon>
               <InfoIcon />
             </ListItemIcon>
-            <ListItemText primary="About" />
+            <ListItemText primary='About' />
           </ListItem>
           <Typography>Account Pages</Typography>
-          <ListItem button key="Profile" component={Link} to="/profile">
+          <ListItem button key='Profile' component={Link} to='/profile'>
             <ListItemIcon>
               <PermContactCalendarIcon />
             </ListItemIcon>
-            <ListItemText primary="Profile" />
+            <ListItemText primary='Profile' />
           </ListItem>
-          <ListItem button key="Sign Up" component={Link} to="/register-user">
+          <ListItem button key='Sign Up' component={Link} to='/register-user'>
             <ListItemIcon>
               <RocketLaunchIcon />
             </ListItemIcon>
-            <ListItemText primary="Sign Up" />
+            <ListItemText primary='Sign Up' />
           </ListItem>
-          <ListItem button key="Sign In" component={Link} to="/login">
+          <ListItem button key='Sign In' component={Link} to='/login'>
             <ListItemIcon>
-              <LockOpenIcon color="secondary" />
+              <LockOpenIcon color='secondary' />
             </ListItemIcon>
-            <ListItemText primary="Sign In" />
+            <ListItemText primary='Sign In' />
           </ListItem>
-          <ListItem button key="Signout">
+          <ListItem button key='Signout'>
             <ListItemIcon>
               <ExitToAppIcon />
             </ListItemIcon>
-            <ListItemText primary="Sign out" />
+            <ListItemText primary='Sign out' />
           </ListItem>
         </List>
       </Drawer>
@@ -208,7 +208,7 @@ export default function TodoMsgNavbar() {
           <BottomNavigationAction icon={<RestoreIcon />} />
           <BottomNavigationAction icon={<FavoriteIcon />} />
           <BottomNavigationAction icon={<LocationOnIcon />} />
-          <BottomNavigationAction value="/login" component={Link} to="/login" icon={<AccountCircleIcon />} />
+          <BottomNavigationAction value='/login' component={Link} to='/login' icon={<AccountCircleIcon />} />
           <BottomNavigationAction icon={<SettingsIcon />} />
         </BottomNavigation>
       </Box>
@@ -238,11 +238,11 @@ export default function TodoMsgNavbar() {
     }
     const replacePathname = props?.location?.pathname.replace(/\/{1}/, '')
     return (
-      <div role="presentation" onClick={handleClick}>
-        <Breadcrumbs aria-label="breadcrumb">
-          <StyledBreadcrumb component={Link} to="/" label="Home" icon={<HomeIcon fontSize="small" />} />
+      <div role='presentation' onClick={handleClick}>
+        <Breadcrumbs aria-label='breadcrumb'>
+          <StyledBreadcrumb component={Link} to='/' label='Home' icon={<HomeIcon fontSize='small' />} />
           {props?.location?.pathname && props?.location?.pathname !== '/' && (
-            <StyledBreadcrumb component={Link} to="/login" label={replacePathname} />
+            <StyledBreadcrumb component={Link} to='/login' label={replacePathname} />
           )}
         </Breadcrumbs>
       </div>
@@ -256,7 +256,7 @@ export default function TodoMsgNavbar() {
   }))
   return (
     <>
-      <Grid container spacing={2} direction="row" justifyContent="space-between" alignItems="center">
+      <Grid container spacing={2} direction='row' justifyContent='space-between' alignItems='center'>
         <Grid item xs={2} md={2} sm={10}>
           <Item>
             <SiderBar />

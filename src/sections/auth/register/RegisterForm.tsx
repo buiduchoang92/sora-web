@@ -77,20 +77,20 @@ export default function RegisterForm() {
     <FormProvider methods={methods} onSubmit={handleSubmit(onSubmit)}>
       <Stack spacing={3}>
         <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
-          <RHFTextField name="first_name" label="First name" />
-          <RHFTextField name="last_name" label="Last name" />
+          <RHFTextField name='first_name' label='First name' />
+          <RHFTextField name='last_name' label='Last name' />
         </Stack>
 
-        <RHFTextField name="email" label="Email address" />
+        <RHFTextField name='email' label='Email address' />
 
         <RHFTextField
-          name="password"
-          label="Password"
+          name='password'
+          label='Password'
           type={showPassword ? 'text' : 'password'}
           InputProps={{
             endAdornment: (
-              <InputAdornment position="end">
-                <IconButton edge="end" onClick={() => setShowPassword(!showPassword)}>
+              <InputAdornment position='end'>
+                <IconButton edge='end' onClick={() => setShowPassword(!showPassword)}>
                   <Iconify icon={showPassword ? 'eva:eye-fill' : 'eva:eye-off-fill'} />
                 </IconButton>
               </InputAdornment>
@@ -98,11 +98,11 @@ export default function RegisterForm() {
           }}
         />
         <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
-          <RHFSelect name="storeID" label="Store" options={storeID} defaultValue="" />
-          <RHFSelect name="addressID" label="Address" options={addressID} defaultValue="" />
+          <RHFSelect name='storeID' label='Store' options={storeID} defaultValue='' />
+          <RHFSelect name='addressID' label='Address' options={addressID} defaultValue='' />
         </Stack>
 
-        <LoadingButton fullWidth size="large" type="submit" variant="contained" loading={isSubmitting}>
+        <LoadingButton fullWidth size='large' type='submit' variant='contained' loading={isSubmitting}>
           Register
         </LoadingButton>
       </Stack>

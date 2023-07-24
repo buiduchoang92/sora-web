@@ -24,14 +24,14 @@ export default function CreateUser() {
     <div>
       <h1>Create user</h1>
       <form onSubmit={handleSubmit}>
-        <table cellSpacing="10">
+        <table cellSpacing='10'>
           <tbody>
             <tr>
               <th>
                 <label>UserName: </label>
               </th>
               <td>
-                <input type="text" name="user_name" onChange={handleChange} />
+                <input type='text' name='user_name' onChange={handleChange} />
               </td>
             </tr>
             <tr>
@@ -39,7 +39,7 @@ export default function CreateUser() {
                 <label>YourName: </label>
               </th>
               <td>
-                <input type="text" name="your_name" onChange={handleChange} />
+                <input type='text' name='your_name' onChange={handleChange} />
               </td>
             </tr>
             <tr>
@@ -47,7 +47,7 @@ export default function CreateUser() {
                 <label>Address: </label>
               </th>
               <td>
-                <input type="text" name="address" onChange={handleChange} />
+                <input type='text' name='address' onChange={handleChange} />
               </td>
             </tr>
             <tr>
@@ -55,11 +55,11 @@ export default function CreateUser() {
                 <label>Telephone: </label>
               </th>
               <td>
-                <input type="text" name="telephone" onChange={handleChange} />
+                <input type='text' name='telephone' onChange={handleChange} />
               </td>
             </tr>
             <tr>
-              <td align="right">
+              <td align='right'>
                 <button>Save</button>
               </td>
             </tr>

@@ -6,7 +6,7 @@ import Iconify from '../../../components/Iconify'
 
 // ----------------------------------------------------------------------
 
-const PopperStyle = styled((props) => <Popper open placement="bottom-start" {...props} />)({
+const PopperStyle = styled((props) => <Popper open placement='bottom-start' {...props} />)({
   width: '280px !important',
 })
 
@@ -44,11 +44,11 @@ export default function BlogPostsSearch({ posts }: BlogPostsSearchProps) {
       renderInput={(params) => (
         <TextField
           {...params}
-          placeholder="Search post..."
+          placeholder='Search post...'
           InputProps={{
             ...params.InputProps,
             startAdornment: (
-              <InputAdornment position="start">
+              <InputAdornment position='start'>
                 <Iconify icon={'eva:search-fill'} sx={{ ml: 1, width: 20, height: 20, color: 'text.disabled' }} />
               </InputAdornment>
             ),
